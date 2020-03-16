@@ -13,7 +13,7 @@ dnf_repos:
 dnf_packages:
   - nano
   - tmux
-  - materia-theme
+  - materia-gtk-theme
   - paper-icon-theme
   - gnome-tweaks
   - google-chrome-stable
@@ -60,3 +60,63 @@ gsettings:
     value: type
   - key: org.gnome.desktop.wm.keybindings.switch-input-source
     value: "['<Alt>Shift_L']"
+
+
+dconf:
+  - key: org.gtk.settings.file-chooser.sort-directories-first
+    value: true
+  - key: org.gtk.settings.file-chooser.location-mode
+    value: "filename-entry"
+  - key: org.gnome.desktop.applications.terminal.exec-arg
+    value: "-x --maximize"
+  - key: /org/gnome/desktop/input-sources/sources
+    value: "[('xkb', 'us'), ('xkb', 'ru')]"
+  - key: /org/gnome/desktop/interface/cursor-theme
+    value: "Paper"
+  - key: /org/gnome/desktop/interface/enable-hot-corners
+    value: False
+  - key: /org/gnome/desktop/interface/gtk-theme
+    value: "Materia-dark"
+  - key: /org/gnome/desktop/interface/icon-theme
+    value: "Paper"
+  - key: /org/gnome/desktop/notifications/application/org-gnome-software/enable
+    value: False
+  - key: /org/gnome/desktop/wm/preferences/audible-bell
+    value: False
+  - key: /org/gnome/nautilus/preferences/always-use-location-entry
+    value: True
+  - key: /org/gnome/shell/enabled-extensions
+    value: ['background-logo@fedorahosted.org', 'user-theme', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'CoverflowAltTab@palatis.blogspot.com', 'remove-dropdown-arrows@mpdeimos.com', 'night-light-slider.timur@linux.com', 'arc-menu@linxgem33.com', 'tweaks-system-menu@extensions.gnome-shell.fifi.org', 'extra-panels@darkxst.feathertop.org', 'dash-to-panel@jderose9.github.com']
+  - key: /org/gnome/shell/favorite-apps
+    value: ['org.gnome.Nautilus.desktop', 'google-chrome.desktop', 'org.gnome.Terminal.desktop']
+  - key: /org/gnome/shell/extensions/arc-menu/disable-activities-hotcorner
+    value: True
+  - key: /org/gnome/shell/extensions/arc-menu/show-suspend-button
+    value: True
+  - key: /org/gnome/shell/extensions/arc-menu/menu-button-icon
+    value: 'System_Icon'
+  - key: /org/gnome/shell/extensions/user-theme/name
+    value: 'Materia-dark'
+  - key: /org/gnome/software/download-updates-notify
+    value: False
+  - key: /org/gnome/software/download-updates
+    value: False
+  - key:
+    value:
+  - key:
+    value:
+  - key:
+    value:
+  - key:
+    value:
+  - key:
+    value:
+  - key:
+    value:
+  - key:
+    value:
+  - key:
+    value:
+  - key:
+    value:
+

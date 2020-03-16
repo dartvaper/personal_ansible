@@ -3,7 +3,7 @@
   roles:
     - pkgs
     - pip
-#    - gnome-shell-extensions
+    - gnome-shell-extensions
 #    - gsettings
-#    - ohmyzsh
+    - ohmyzsh
     - configs
